@@ -1,0 +1,14 @@
+salt 'shefer.v.brsh.co' file.remove /etc/monit.conf
+salt 'shefer.v.brsh.co' cp.get_file salt://monit.conf /etc/monit.conf
+salt '*' service.restart monit
+
+salt 'shefer.v.brsh.co' state.highstate
+
+net-ins.v.brsh.co
+shmuely.v.brsh.co
+
+/etc/monit.d/service
+   file:
+    - managed
+    - source: salt://service
+
