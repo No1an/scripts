@@ -1,0 +1,2 @@
+# Find and replace 'abcd' to 'qwerty' in posts table in the guid column 
+UPDATE  `posts` SET  `guid` = REPLACE(  `guid` ,  'abcd',  'qwerty' ) WHERE  `guid` LIKE  '%abcd%'
