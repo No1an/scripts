@@ -1,2 +1,5 @@
 # Find and replace 'abcd' to 'qwerty' in posts table in the guid column 
 UPDATE  `posts` SET  `guid` = REPLACE(  `guid` ,  'abcd',  'qwerty' ) WHERE  `guid` LIKE  '%abcd%'
+
+#REGEXP expression 
+(<a href=[\'"]http:\/\/www\.abettervirtual\.com["\'] target="_blank">[A-Za-z0-9 ]+<\/a>)
